@@ -6,7 +6,7 @@ public class arrCheck {
 
 	public static void main(String[] args) {
 		int[] numbers = { 1, 2, 4, 5 };
-
+	
 		int checkNum = 10;
 
 		boolean bilLicheckNum = false;
