@@ -1,5 +1,6 @@
 package bootcamp;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class ArrIntersect {
@@ -19,18 +20,18 @@ public class ArrIntersect {
 
 	public static void intersect(int[] arr1, int[] arr2) {
 		int match = 0;
+		ArrayList arr3 = new ArrayList();
 		for (int i = 0; i < arr1.length; i++) {
 			Arrays.binarySearch(arr1, i);
 			for (int j = 0; j < arr2.length; j++) {
 				Arrays.binarySearch(arr2, j);
 				if (arr1[i] == arr2[j]) {
 					match = arr1[i];
-					System.out.print(match + ", ");
+					arr3.add(match);
 				}
 			}
-
 		}
-
+		System.out.print(arr3);
 	}
 
 }
