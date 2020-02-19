@@ -156,7 +156,6 @@ public class TestGame {
 			String ifwantsQuit = ifwantsQuitInp.nextLine();
 			if (ifwantsQuit.equalsIgnoreCase("y")) {
 				System.out.println("Thank you! Game is over" + " your score is " + score);
-				printScore(score);
 				return true;
 			} else {
 				return false;
@@ -187,7 +186,6 @@ public class TestGame {
 				else {
 					if (checkAnswer(userAnswer, question[i].answer, question[i].explanation) == true) {
 						score = countScore(score);
-						printScore(score);
 					}
 					if (doesWantToQuit(score) == true) {
 						break;
@@ -196,6 +194,7 @@ public class TestGame {
 				}
 				
 			}
+			printScore(score);
 
 		}
 	   public void wantsToRepeat() {
